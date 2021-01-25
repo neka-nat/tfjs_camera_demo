@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Object detection</h1>
+    <div id="info" style='display:none'>
+    </div>
+    <div id='main'>
+        <video id="video" playsinline>
+        </video>
+        <canvas id="output" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"></script>
+    <script>
+      tf.setBackend('wasm');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="camera.js"></script>
+</body>
+
+</html>
